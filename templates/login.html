@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <h1>Docházkový systém</h1>
+    
+    <div class="login-container">
+        <img src="{{url_for('static', filename='img/logo_bez_bg.png')}}"  height="50px" width="50px" alt="Dochazka">
+        
+        <form action="{{ url_for('login') }}" method="post">
+            <input type="text" name="username" placeholder="Jméno">
+            <input type="password" name="password" placeholder="Heslo">
+            <input type="submit" value="Přihlásit se">
+            <h6>created by Martin Kalkuš</h6>
+        </form>
+    </div>
+</body>
+</html>

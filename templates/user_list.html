@@ -1,0 +1,22 @@
+<body>
+    <h3>Seznam aktivních uživatelů</h3>
+    <table>
+        <tr>
+            <!-- Sloupce hlavičky podle databáze -->
+            <th>ID</th>
+            <th>Jméno</th>
+            <th>Příjmení</th>
+            <th>email</th>           
+            
+        </tr>
+        {% for user in users %}
+        <tr>
+            <!-- Indexy dle headeru tabulky -->
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+            <td>{{ user[2] }}</td>
+            <td>{{ user[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
