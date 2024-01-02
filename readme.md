@@ -35,4 +35,6 @@ Alternativně bude možné adaptovat nadstavbu pro stavební společnosti, pro t
 
 ## Licence
 
-V současné době není licencován. 
+V současné době není licencován.
+
+![Demo](demo_screen.png)
